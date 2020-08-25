@@ -1,0 +1,223 @@
+@import './../App.scss';
+.trust {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    // max-width: 120rem;
+    // width: 110rem;
+    // margin: auto;
+    margin-top: 4rem;
+}
+.trust__img {
+    min-height: 100vh;
+    min-width: 48vw;
+    // min-width: 45vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0.7;
+}
+.trust__about {
+    // padding: 15rem 12vw 4rem 40vw;
+    padding: 15rem 0 8rem 40rem;
+    text-align: right;
+}
+.trust-title {
+    font-size: 6rem;
+    font-weight: normal;
+    line-height: 0.8;
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+}
+.trust-title__sir-txt {
+    font-size: 2.6rem;
+    // padding-right: 1rem;
+    // font-weight: bold;
+    // color: $color_theme;
+}
+.trust-title__frederick-txt {
+    font-size: 6rem;
+    // font-weight: bold;
+    // color: $color_theme;
+}
+.trust-title__ashton-txt {
+    font-weight: bold;
+    display: block;
+    font-size: 11rem;
+    // color: $color_theme;
+    // left: -1rem;
+    letter-spacing: -0.7rem;
+}
+.trust-title__holders-txt {
+    font-size: 2.5rem;
+    display: block;
+    padding: 0.2rem 0 0.3rem;
+    color: $color_theme;
+    // font-weight: bold;
+}
+.trust-title__trust-txt {
+    color: $color_theme;
+    font-size: 6.9rem;
+    font-weight: bold;
+    letter-spacing: -0.5rem;
+}
+
+.trust__desc {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    color: #999;
+    p {
+        margin-bottom: 1rem;
+    }
+}
+.home-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 25vw;
+}
+.home-link {
+    display: grid;
+    align-content: center;
+    text-align: center;
+    font-size: 2.2rem;
+    color: #ccc;
+    text-decoration: none;
+    padding: 5rem 2rem 2rem;
+    overflow: hidden;
+    .btn {
+        padding: 1rem 2rem;
+        border: solid 0.1rem #fff;
+        display: block;
+        margin: 2rem auto -3rem;
+        width: 15rem;
+        font-size: 1.4rem;
+        top: 2rem;
+        opacity: 0;
+    }
+}
+.home-link__bg {
+    filter: grayscale(100);
+}
+.home-link__bg,
+.home-link__cover {
+    transition: 0.5s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.7);
+    background-size: cover;
+}
+.home-link--rte .home-link__bg {
+    background-image: url('./../imgs/rte.jpg');
+}
+.home-link--sse .home-link__bg {
+    background-image: url('./../imgs/sse.jpg');
+}
+.home-link--efb .home-link__bg {
+    background-image: url('./../imgs/efb.jpg');
+}
+.home-link:focus,
+.home-link:hover {
+    // text-decoration: underline;
+    outline: none;
+    // color: #111;
+    // font-weight: bold;
+    .btn {
+        opacity: 1;
+        top: 0;
+        transition: 0.5s 0.3s;
+    }
+}
+.home-link:focus .home-link__bg,
+.home-link:hover .home-link__bg {
+    transform: scale(1.2);
+    transition: 2.5s;
+}
+.home-link:focus .home-link__cover,
+.home-link:hover .home-link__cover {
+    // background: rgba(230, 138, 0, 0.8);
+    // background: rgba(230, 172, 0, 0.8);
+    transition: 1s;
+}
+.home-link--rte:focus .home-link__cover,
+.home-link--rte:hover .home-link__cover {
+    background: rgba(255, 0, 0, 0.6);
+    transition: 1s;
+}
+
+.home-link--sse:focus .home-link__cover,
+.home-link--sse:hover .home-link__cover {
+    background: rgba(112, 96, 47, 0.7);
+    transition: 1s;
+}
+.home-link--efb:focus .home-link__cover,
+.home-link--efb:hover .home-link__cover {
+    background: rgba(0, 104, 126, 0.7);
+    transition: 1s;
+}
+
+.home-link__caption {
+}
+@include tablet {
+    .home-links {
+        grid-auto-rows: 30rem;
+    }
+}
+
+@include mobile {
+    .trust__img {
+        opacity: 0.3;
+        left: -5%;
+    }
+
+    .trust-title {
+        margin-bottom: 50rem;
+    }
+    .trust-title__sir-txt {
+        font-size: 2rem;
+    }
+    .trust-title__frederick-txt {
+        font-size: 4rem;
+    }
+    .trust-title__ashton-txt {
+        font-size: 9rem;
+    }
+    .trust__desc {
+        position: absolute;
+        bottom: 4rem;
+        left: 0;
+        width: 100%;
+        padding-right: 8rem;
+    }
+    .home-links {
+        display: block;
+    }
+    .home-link {
+        width: 100%;
+        height: 35rem;
+    }
+}
+@include mobile-sm {
+    .trust-title {
+        margin-bottom: 60rem;
+    }
+    .trust-title__sir-txt {
+        font-size: 2.1rem;
+    }
+    .trust-title__frederick-txt {
+        font-size: 4.1rem;
+    }
+    .trust-title__ashton-txt {
+        font-size: 8rem;
+    }
+
+    .trust__desc {
+        padding-right: 4rem;
+    }
+    .trust__img {
+        left: -22%;
+    }
+}

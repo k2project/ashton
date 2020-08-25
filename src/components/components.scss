@@ -1,0 +1,101 @@
+@import './../App.scss';
+.footer {
+    background-color: #111;
+    padding: 2rem;
+    text-align: center;
+    overflow: hidden;
+    p {
+        margin-bottom: 0.5rem;
+    }
+}
+.footer__img {
+    height: 45rem;
+    // margin: 1rem auto 0;
+    position: absolute;
+    opacity: 0.04;
+    top: 5rem;
+    left: -5rem;
+}
+.footer__copy-rights {
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: silver;
+}
+.footer__bar {
+    font-size: 1.2rem;
+    max-width: 100rem;
+    display: flex;
+    text-align: left;
+    padding: 10rem 0 8rem;
+    justify-content: space-around;
+
+    h4 {
+        margin: 1rem 0 0.5rem;
+    }
+    ul {
+        color: silver;
+        list-style: none;
+    }
+    li {
+        padding: 0.2rem 0 0;
+    }
+}
+
+@include tablet {
+    .footer__bar {
+        display: block;
+        text-align: center;
+        div {
+            min-width: 20%;
+            padding-right: 2rem;
+            display: inline-block;
+            min-height: 17rem;
+            vertical-align: top;
+        }
+        div:first-child {
+            width: 100%;
+        }
+    }
+}
+@include mobile {
+    .footer__bar {
+        div:nth-child(4) {
+            width: 100%;
+        }
+        div:last-child {
+            top: 4rem;
+            display: flex;
+            justify-content: center;
+            li {
+                padding: 0 2rem;
+            }
+        }
+    }
+    .footer__img {
+        top: 50vh;
+        left: -15rem;
+    }
+}
+@include mobile-sm {
+    .footer__bar {
+        padding-left: 2rem;
+        div {
+            width: 100%;
+            padding-right: 2rem;
+            padding-left: 2rem;
+            min-height: 10rem;
+            margin-top: 1rem;
+            text-align: left;
+        }
+        div:first-child {
+            top: -5rem;
+        }
+        div:last-child {
+            margin-bottom: 2rem;
+            display: block;
+            li {
+                padding: 0;
+            }
+        }
+    }
+}
