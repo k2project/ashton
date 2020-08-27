@@ -199,10 +199,14 @@
         width: 100%;
         height: 35rem;
     }
+
+    .home-link__cover {
+        background: rgba(0, 0, 0, 0.5);
+    }
 }
 @include mobile-sm {
     .trust-title {
-        margin-bottom: 60rem;
+        margin-bottom: 50rem;
     }
     .trust-title__sir-txt {
         font-size: 2.1rem;
