@@ -8,6 +8,7 @@
     // width: 110rem;
     // margin: auto;
     margin-top: 4rem;
+    overflow-x: hidden;
 }
 .trust__img {
     min-height: 100vh;
@@ -109,6 +110,7 @@
     top: 0;
     background: rgba(0, 0, 0, 0.7);
     background-size: cover;
+    background-position: center;
 }
 .home-link--rte .home-link__bg {
     background-image: url('./../imgs/rte.jpg');
@@ -168,13 +170,16 @@
 }
 
 @include mobile {
+    .trust {
+        margin-top: 2rem;
+    }
     .trust__img {
         opacity: 0.3;
         left: -5%;
     }
 
     .trust-title {
-        margin-bottom: 50rem;
+        margin-bottom: 40rem;
     }
     .trust-title__sir-txt {
         font-size: 2rem;
@@ -191,6 +196,9 @@
         left: 0;
         width: 100%;
         padding-right: 8rem;
+        p {
+            font-size: 1.2rem;
+        }
     }
     .home-links {
         display: block;
@@ -199,6 +207,10 @@
         width: 100%;
         height: 35rem;
     }
+    .home-link .btn {
+        opacity: 1;
+        top: 0;
+    }
 
     .home-link__cover {
         background: rgba(0, 0, 0, 0.5);
@@ -206,7 +218,7 @@
 }
 @include mobile-sm {
     .trust-title {
-        margin-bottom: 50rem;
+        margin-bottom: 45rem;
     }
     .trust-title__sir-txt {
         font-size: 2.1rem;
@@ -224,4 +236,15 @@
     .trust__img {
         left: -22%;
     }
+
+    // .home-link--rte .home-link__cover {
+    //     background: rgba(255, 0, 0, 0.4);
+    // }
+
+    // .home-link--sse .home-link__cover {
+    //     background: rgba(112, 96, 47, 0.5);
+    // }
+    // .home-link--efb .home-link__cover {
+    //     background: rgba(0, 104, 126, 0.5);
+    // }
 }

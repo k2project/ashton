@@ -22,6 +22,11 @@ $color-theme: #e68a00;
     }
 }
 
+.app {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
 button {
     border: none;
     background-color: transparent;
