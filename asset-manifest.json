@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ashton/static/css/main.d0835029.chunk.css",
+    "main.css": "/ashton/static/css/main.05b03fb2.chunk.css",
     "main.js": "/ashton/static/js/main.99965191.chunk.js",
     "main.js.map": "/ashton/static/js/main.99965191.chunk.js.map",
     "runtime-main.js": "/ashton/static/js/runtime-main.746bd8de.js",
@@ -8,9 +8,9 @@
     "static/js/2.0ba280d2.chunk.js": "/ashton/static/js/2.0ba280d2.chunk.js",
     "static/js/2.0ba280d2.chunk.js.map": "/ashton/static/js/2.0ba280d2.chunk.js.map",
     "index.html": "/ashton/index.html",
-    "precache-manifest.c1f4e6a64ecd4d33b150da7a446f805d.js": "/ashton/precache-manifest.c1f4e6a64ecd4d33b150da7a446f805d.js",
+    "precache-manifest.f96170f281f138b0967f7b5b0e221d15.js": "/ashton/precache-manifest.f96170f281f138b0967f7b5b0e221d15.js",
     "service-worker.js": "/ashton/service-worker.js",
-    "static/css/main.d0835029.chunk.css.map": "/ashton/static/css/main.d0835029.chunk.css.map",
+    "static/css/main.05b03fb2.chunk.css.map": "/ashton/static/css/main.05b03fb2.chunk.css.map",
     "static/js/2.0ba280d2.chunk.js.LICENSE.txt": "/ashton/static/js/2.0ba280d2.chunk.js.LICENSE.txt",
     "static/media/SchaufussStarLogo.png": "/ashton/static/media/SchaufussStarLogo.d926b1a6.png",
     "static/media/ashton2.jpg": "/ashton/static/media/ashton2.a1a9e84e.jpg",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.746bd8de.js",
     "static/js/2.0ba280d2.chunk.js",
-    "static/css/main.d0835029.chunk.css",
+    "static/css/main.05b03fb2.chunk.css",
     "static/js/main.99965191.chunk.js"
   ]
 }
